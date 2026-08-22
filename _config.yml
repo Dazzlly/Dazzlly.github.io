@@ -1,3 +1,6 @@
 title: Dazzlly
 description: Portfólio de Lucas Arruda Oliveira (Dazzlly) — Mecânico Auto Elétrico, Técnico em Informática, Criador de Conteúdo e Futuro Engenheiro de Software.
 url: https://www.dazzlly.com
+markdown: kramdown
+include:
+  - assets
