@@ -1,82 +1,75 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes · Dazzlly</title>
+  <meta name="description" content="Portfólio de Lucas Arruda Oliveira (Dazzlly)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="/" class="nav-logo">
+      <span class="logo-bracket">&lt;</span><span class="logo-text">Dazzlly</span><span class="logo-bracket">/&gt;</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="/" class="nav-link ">Início</a></li>
+      <li><a href="/hobbies.html" class="nav-link ">Hobbies</a></li>
+      <li><a href="/carreira.html" class="nav-link ">Carreira</a></li>
+      <li><a href="/formacao.html" class="nav-link ">Formação</a></li>
+      <li><a href="/eventos.html" class="nav-link ">Eventos</a></li>
+      <li><a href="/projetos.html" class="nav-link ">Projetos</a></li>
+      <li><a href="/social.html" class="nav-link ">Social</a></li>
+      <li><a href="/contato.html" class="nav-link nav-cta ">Contato</a></li>
+      <li><button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">&#9790;</button></li>
+    </ul>
+  </div>
+</nav>
 
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Notes | Dazzlly homepage</title>
-<meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="Notes" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="my project tests updates!" />
-<meta property="og:description" content="my project tests updates!" />
-<link rel="canonical" href="http://0.0.0.0:3000/AGENTS.html" />
-<meta property="og:url" content="http://0.0.0.0:3000/AGENTS.html" />
-<meta property="og:site_name" content="Dazzlly homepage" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Notes" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"my project tests updates!","headline":"Notes","url":"http://0.0.0.0:3000/AGENTS.html"}</script>
-<!-- End Jekyll SEO tag -->
+  <main>
+    <h1 id="notes">Notes</h1>
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=fda71a8aceb2aab6da8c8a5f6e6f0078a2ff5ca5">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
-
-<!-- Setup Google Analytics -->
-
-
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="http://0.0.0.0:3000/">Dazzlly homepage</a></h1>
-
-        
-
-        <p>my project tests updates!</p>
-
-        
-        <p class="view"><a href="https://github.com/Dazzlly/Dazzlly.github.io">View the Project on GitHub <small>Dazzlly/Dazzlly.github.io</small></a></p>
-        
-
-        
-
-        
-      </header>
-      <section>
-
-      <h1 id="notes">Notes</h1>
-
-<p>Static GitHub Pages site (Jekyll, <code class="language-plaintext highlighter-rouge">jekyll-theme-minimal</code> via <code class="language-plaintext highlighter-rouge">_config.yml</code>). Content is <code class="language-plaintext highlighter-rouge">README.md</code>; <code class="language-plaintext highlighter-rouge">CNAME</code> sets the production domain.</p>
+<p>Portfólio Jekyll (GitHub Pages) customizado para Lucas Arruda Oliveira (Dazzlly).</p>
 
 <ul>
-  <li>Dev: <code class="language-plaintext highlighter-rouge">docker compose -f docker-compose.base44.yml up -d</code> → http://localhost:3000 (Jekyll serve with <code class="language-plaintext highlighter-rouge">--force_polling</code>, needed for bind mounts).</li>
-  <li><code class="language-plaintext highlighter-rouge">Gemfile</code> was added for local dev only (GitHub Pages ignores it); gems live in the <code class="language-plaintext highlighter-rouge">gems</code> volume.</li>
-  <li>No database, no external services, no secrets. “GitHub Metadata: No GitHub API authentication” in logs is harmless.</li>
-  <li>Editing <code class="language-plaintext highlighter-rouge">_config.yml</code> requires restarting the <code class="language-plaintext highlighter-rouge">web</code> service; content edits auto-regenerate.</li>
+  <li>Dev: <code class="language-plaintext highlighter-rouge">docker compose -f docker-compose.base44.yml up -d</code> → http://localhost:3000 (Jekyll serve com <code class="language-plaintext highlighter-rouge">--force_polling</code>).</li>
+  <li>Layout customizado em <code class="language-plaintext highlighter-rouge">_layouts/default.html</code> com includes (<code class="language-plaintext highlighter-rouge">_includes/navbar.html</code>, <code class="language-plaintext highlighter-rouge">_includes/footer.html</code>).</li>
+  <li>Estilos em <code class="language-plaintext highlighter-rouge">assets/css/style.css</code> — paleta: preto/branco, azul cobalto (#0047AB) e ciano (#00D4FF).</li>
+  <li>Scripts em <code class="language-plaintext highlighter-rouge">assets/js/main.js</code> — menu mobile, toggle de tema, fade-in no scroll, toggle Twitch/YouTube player, formulário de contato (mailto).</li>
+  <li>Páginas: <code class="language-plaintext highlighter-rouge">index.html</code>, <code class="language-plaintext highlighter-rouge">hobbies.html</code>, <code class="language-plaintext highlighter-rouge">carreira.html</code>, <code class="language-plaintext highlighter-rouge">formacao.html</code>, <code class="language-plaintext highlighter-rouge">eventos.html</code>, <code class="language-plaintext highlighter-rouge">projetos.html</code>, <code class="language-plaintext highlighter-rouge">social.html</code>, <code class="language-plaintext highlighter-rouge">contato.html</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">Gemfile</code> foi adicionado para dev local; gems vivem no volume <code class="language-plaintext highlighter-rouge">gems</code>.</li>
+  <li>Sem banco de dados, sem secrets. “GitHub Metadata: No GitHub API authentication” é inofensivo.</li>
+  <li>Editar <code class="language-plaintext highlighter-rouge">_config.yml</code> requer <code class="language-plaintext highlighter-rouge">docker compose -f docker-compose.base44.yml restart web</code>; edições de conteúdo/páginas regeneram automaticamente.</li>
+  <li>Player Twitch/YouTube: trocar <code class="language-plaintext highlighter-rouge">TWITCH_CHANNEL</code> e <code class="language-plaintext highlighter-rouge">YOUTUBE_CHANNEL</code> em <code class="language-plaintext highlighter-rouge">assets/js/main.js</code> para os canais reais.</li>
+  <li>Links sociais: trocar URLs em <code class="language-plaintext highlighter-rouge">social.html</code> e <code class="language-plaintext highlighter-rouge">contato.html</code> para os perfis reais.</li>
 </ul>
 
-
-      </section>
-      <footer>
-        
-        <p>This project is maintained by <a href="https://github.com/Dazzlly">Dazzlly</a></p>
-        
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+  </main>
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <span class="logo-bracket">&lt;</span><span class="logo-text">Dazzlly</span><span class="logo-bracket">/&gt;</span>
+      <p>Lucas Arruda Oliveira</p>
     </div>
-    <script src="/assets/js/scale.fix.js"></script>
-  </body>
+    <nav class="footer-links">
+      <a href="/">Início</a>
+      <a href="/carreira.html">Carreira</a>
+      <a href="/projetos.html">Projetos</a>
+      <a href="/social.html">Social</a>
+      <a href="/contato.html">Contato</a>
+    </nav>
+    <p class="footer-copy">&copy; <span id="year"></span> Dazzlly · Feito com Jekyll</p>
+  </div>
+</footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
 </html>

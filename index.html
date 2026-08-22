@@ -1,41 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Início · Dazzlly</title>
-  <meta name="description" content="Portfólio de Lucas Arruda Oliveira (Dazzlly)">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-  <nav class="navbar" id="navbar">
-  <div class="nav-container">
-    <a href="/" class="nav-logo">
-      <span class="logo-bracket">&lt;</span><span class="logo-text">Dazzlly</span><span class="logo-bracket">/&gt;</span>
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-menu" id="navMenu">
-      <li><a href="/" class="nav-link active">Início</a></li>
-      <li><a href="/hobbies.html" class="nav-link ">Hobbies</a></li>
-      <li><a href="/carreira.html" class="nav-link ">Carreira</a></li>
-      <li><a href="/formacao.html" class="nav-link ">Formação</a></li>
-      <li><a href="/eventos.html" class="nav-link ">Eventos</a></li>
-      <li><a href="/projetos.html" class="nav-link ">Projetos</a></li>
-      <li><a href="/social.html" class="nav-link ">Social</a></li>
-      <li><a href="/contato.html" class="nav-link nav-cta ">Contato</a></li>
-      <li><button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">&#9790;</button></li>
-    </ul>
-  </div>
-</nav>
+---
+layout: default
+title: Início
+---
 
-  <main>
-    <section class="home-hero">
+<section class="home-hero">
   <div class="hero-content fade-in">
     <div class="hero-badge">
       <span class="pulse"></span>
@@ -58,8 +26,8 @@
       <span class="role-tag">Engenharia de Software</span>
     </div>
     <div class="hero-actions">
-      <a href="/projetos.html" class="btn btn-primary">Ver Projetos</a>
-      <a href="/contato.html" class="btn btn-outline">Entrar em Contato</a>
+      <a href="{{ '/projetos.html' | relative_url }}" class="btn btn-primary">Ver Projetos</a>
+      <a href="{{ '/contato.html' | relative_url }}" class="btn btn-outline">Entrar em Contato</a>
     </div>
   </div>
 </section>
@@ -159,29 +127,7 @@
       </div>
     </div>
     <p style="text-align: center; color: var(--text-dim); font-size: 0.85rem; margin-top: 2rem;">
-      Quer deixar seu depoimento? <a href="/contato.html" style="color: var(--cyan);">Entre em contato</a>.
+      Quer deixar seu depoimento? <a href="{{ '/contato.html' | relative_url }}" style="color: var(--cyan);">Entre em contato</a>.
     </p>
   </div>
 </section>
-
-  </main>
-  <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-brand">
-      <span class="logo-bracket">&lt;</span><span class="logo-text">Dazzlly</span><span class="logo-bracket">/&gt;</span>
-      <p>Lucas Arruda Oliveira</p>
-    </div>
-    <nav class="footer-links">
-      <a href="/">Início</a>
-      <a href="/carreira.html">Carreira</a>
-      <a href="/projetos.html">Projetos</a>
-      <a href="/social.html">Social</a>
-      <a href="/contato.html">Contato</a>
-    </nav>
-    <p class="footer-copy">&copy; <span id="year"></span> Dazzlly · Feito com Jekyll</p>
-  </div>
-</footer>
-
-  <script src="/assets/js/main.js"></script>
-</body>
-</html>

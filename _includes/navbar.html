@@ -1,0 +1,21 @@
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="{{ '/' | relative_url }}" class="nav-logo">
+      <span class="logo-bracket">&lt;</span><span class="logo-text">Dazzlly</span><span class="logo-bracket">/&gt;</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Início</a></li>
+      <li><a href="{{ '/hobbies.html' | relative_url }}" class="nav-link {% if page.url contains 'hobbies' %}active{% endif %}">Hobbies</a></li>
+      <li><a href="{{ '/carreira.html' | relative_url }}" class="nav-link {% if page.url contains 'carreira' %}active{% endif %}">Carreira</a></li>
+      <li><a href="{{ '/formacao.html' | relative_url }}" class="nav-link {% if page.url contains 'formacao' %}active{% endif %}">Formação</a></li>
+      <li><a href="{{ '/eventos.html' | relative_url }}" class="nav-link {% if page.url contains 'eventos' %}active{% endif %}">Eventos</a></li>
+      <li><a href="{{ '/projetos.html' | relative_url }}" class="nav-link {% if page.url contains 'projetos' %}active{% endif %}">Projetos</a></li>
+      <li><a href="{{ '/social.html' | relative_url }}" class="nav-link {% if page.url contains 'social' %}active{% endif %}">Social</a></li>
+      <li><a href="{{ '/contato.html' | relative_url }}" class="nav-link nav-cta {% if page.url contains 'contato' %}active{% endif %}">Contato</a></li>
+      <li><button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">&#9790;</button></li>
+    </ul>
+  </div>
+</nav>

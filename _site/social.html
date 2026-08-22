@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social & Transmissões · Dazzlly</title>
+  <meta name="description" content="Portfólio de Lucas Arruda Oliveira (Dazzlly)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="/" class="nav-logo">
+      <span class="logo-bracket">&lt;</span><span class="logo-text">Dazzlly</span><span class="logo-bracket">/&gt;</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="/" class="nav-link ">Início</a></li>
+      <li><a href="/hobbies.html" class="nav-link ">Hobbies</a></li>
+      <li><a href="/carreira.html" class="nav-link ">Carreira</a></li>
+      <li><a href="/formacao.html" class="nav-link ">Formação</a></li>
+      <li><a href="/eventos.html" class="nav-link ">Eventos</a></li>
+      <li><a href="/projetos.html" class="nav-link ">Projetos</a></li>
+      <li><a href="/social.html" class="nav-link active">Social</a></li>
+      <li><a href="/contato.html" class="nav-link nav-cta ">Contato</a></li>
+      <li><button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">&#9790;</button></li>
+    </ul>
+  </div>
+</nav>
+
+  <main>
+    <section class="page-hero fade-in">
+  <h1>Redes Sociais &amp; Transmissões</h1>
+  <p class="subtitle">Me acompanhe nas redes sociais e nas transmissões ao vivo.</p>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <h2 class="section-title fade-in">Minhas Redes</h2>
+    <p class="section-desc fade-in">Clique para acessar cada perfil.</p>
+    <div class="social-links">
+      <a href="https://twitch.tv/dazzlly" target="_blank" rel="noopener" class="social-card fade-in">
+        <span class="social-icon">🟣</span>
+        <span>Twitch</span>
+      </a>
+      <a href="https://youtube.com/@dazzlly" target="_blank" rel="noopener" class="social-card fade-in">
+        <span class="social-icon">▶️</span>
+        <span>YouTube</span>
+      </a>
+      <a href="https://github.com/dazzlly" target="_blank" rel="noopener" class="social-card fade-in">
+        <span class="social-icon">🐙</span>
+        <span>GitHub</span>
+      </a>
+      <a href="https://linkedin.com/in/dazzlly" target="_blank" rel="noopener" class="social-card fade-in">
+        <span class="social-icon">💼</span>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://instagram.com/dazzlly" target="_blank" rel="noopener" class="social-card fade-in">
+        <span class="social-icon">📷</span>
+        <span>Instagram</span>
+      </a>
+      <a href="mailto:lucas@dazzlly.com" class="social-card fade-in">
+        <span class="social-icon">📧</span>
+        <span>Email</span>
+      </a>
+    </div>
+
+    <div class="media-section">
+      <h2 class="section-title fade-in">Transmissões ao Vivo</h2>
+      <p class="section-desc fade-in">Assista à minha live na Twitch ou troque para meu canal do YouTube.</p>
+
+      <div class="media-tabs fade-in">
+        <button class="media-tab active" id="tabTwitch">
+          🟣 Twitch ao vivo
+        </button>
+        <button class="media-tab" id="tabYouTube">
+          ▶️ YouTube
+        </button>
+      </div>
+
+      <div class="media-player-wrap fade-in" id="mediaPlayer">
+        <div class="player-placeholder">
+          <span style="font-size: 2rem;">⏳</span>
+          <p>Carregando player...</p>
+        </div>
+      </div>
+
+      <p style="text-align: center; color: var(--text-dim); font-size: 0.85rem; margin-top: 1rem;">
+        Clique nas abas acima para alternar entre a Twitch ao vivo e o canal do YouTube.
+      </p>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <span class="logo-bracket">&lt;</span><span class="logo-text">Dazzlly</span><span class="logo-bracket">/&gt;</span>
+      <p>Lucas Arruda Oliveira</p>
+    </div>
+    <nav class="footer-links">
+      <a href="/">Início</a>
+      <a href="/carreira.html">Carreira</a>
+      <a href="/projetos.html">Projetos</a>
+      <a href="/social.html">Social</a>
+      <a href="/contato.html">Contato</a>
+    </nav>
+    <p class="footer-copy">&copy; <span id="year"></span> Dazzlly · Feito com Jekyll</p>
+  </div>
+</footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
